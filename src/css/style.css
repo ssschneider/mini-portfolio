@@ -1,0 +1,142 @@
+body {
+    background: url('../images/background-gif.gif') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #B7154A;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card .profile-info {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .profile-info img {
+    border-radius: 50px;
+    border: 4px solid #B7154A;
+}
+
+.card .profile-info .name {
+    font-size: 3.6rem;
+    color: #b8bbc5;
+}
+
+.card .profile-info .job-title {
+    font-size: 1.9rem;
+    color: #b8bbc5;
+}
+
+.card .content {
+    margin-top: 15px;
+}
+
+.card .content .tabs {
+    display: flex;
+}
+
+.card .content .tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .content .tabs .tab img {
+    width: 30px;
+}
+
+.card .tabs .tab.selected{
+    background-color: #B7154A;
+}
+
+.cartao .tabs .tab:hover{
+    background-color: #b7154bad;
+}
+
+.card .info-tab {
+    background-color:#B7154A;
+}
+
+.info-tab .info {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info-tab .info.selected {
+    display: block;
+}
+
+.info-tab .section-title {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-tab .description {
+    font-size: 3rem;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.info-tab .description span {
+    color: #070d12;
+    font-size: 1.8rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.social-media li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-media li a:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 8px;
+    letter-spacing: 2px;
+}
+
+.social-media .curriculum{
+    background-color: #c84580 ;
+}
+
+.social-media .linkedin{
+    background-color: #b6224e;
+}
+
+.social-media .github{
+    background-color: #960820 ;
+}
+
+*::selection {
+    background-color: #070d12;
+    color: #960820;
+}
